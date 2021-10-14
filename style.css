@@ -1,0 +1,56 @@
+* {
+    font-family: "Roboto", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+#action-panel {
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+#game {
+    visibility: hidden;
+    border: solid 2px black;
+    padding: 15px;
+    width: 600px;
+    color: white;
+    background-color: black;
+}
+
+.num {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: large;
+}
+
+/* .material-icons {
+    height: 30px;
+    width: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 3px;
+} */
+
+#retry-btn {
+    display: none;
+}
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
