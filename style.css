@@ -45,7 +45,7 @@ button {
     padding: 3px;
 } */
 
-#retry-btn {
+#retry-btn, #nextworld-btn {
     display: none;
 }
 

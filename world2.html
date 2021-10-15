@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetToGame - Monde 2</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <button id="start-btn" onclick="start()">Continuer le super jeu</button>
+
+    <div id="game" class="container">
+
+        <button class="material-icons" onclick="enableMusic()">
+            volume_up
+        </button>
+
+        <button class="material-icons" onclick="disableMusic()">
+            volume_off
+        </button>
+
+        <audio id="myAudio" autoplay loop>
+            <source src="themesong.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="item">
+            <h2>Niveau: <span id="level-el">0</span> / 6</h2>
+        </div>
+
+        <div class="item">
+            <p>Erreurs: <span id="error-el">0</span> / 2</p>
+            <br>
+        </div>
+
+        <div id="action-panel">
+            <div class="item">
+                <h3>Obtiens</h3>
+                <span class="num" id="numgoal-el"></span>
+                <br>
+            </div>
+
+            <div class="item">
+                <h3>avec</h3>
+                <span class="num" id="num1-el"></span>
+                <span>+</span>
+                <span>?</span>
+                <br>
+            </div>
+
+            <div class="item">
+                <button id="choice1-btn" onclick="add1()">?</button>
+                <button id="choice2-btn" onclick="add2()">?</button>
+                <button id="choice3-btn" onclick="add3()">?</button>
+                <button id="choice4-btn" onclick="add4()">?</button>
+                <br>
+            </div>
+
+            <div class="item">
+                <p>Timer: <span id="countdown">45</span></p>
+            </div>
+
+        </div>
+
+        <div class="item">
+            <span id="message">Trouve le bon nombre pour obtenir le résultat demandé, le timer s'enclenche
+                à partir de la prochaine question.</span>
+        </div>
+
+        <button id="retry-btn" onclick="retry()">Recommencer</button>
+        <a href="index.html"><button id="nextworld-btn">Monde 3 en construction, rejouer le Monde 1 ?</button></a>
+
+    </div>
+
+    <script src="script2.js"></script>
+
+</body>
+
+</html>

@@ -88,10 +88,13 @@ function nextLevel() {
     }
 }
 
+// Win/Lose conditions
+
 function gameWon() {
     isGame1Won = true
     message.innerText = "ET C'EST UNE VICTOIRE TRIOMPHALE !!! 🤯"
     document.getElementById("action-panel").style.display = "none"
+    document.getElementById("nextworld-btn").style.display = "inline"
     victorySong.play();
 }
 
@@ -106,6 +109,7 @@ function retry() {
 }
 
 // Timer
+
 function timer() {
 
     var seconds = document.getElementById("countdown").textContent;
@@ -127,6 +131,7 @@ function timerOver() {
 }
 
 // Musique
+
 function enableMusic() {
     themeSong.muted = false
 }
